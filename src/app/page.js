@@ -10,7 +10,7 @@ const BookerAccountingWebsite = () => {
 
   return (
     <div className="min-h-screen bg-primary text-foreground">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <Aboutus />
       <Footer />

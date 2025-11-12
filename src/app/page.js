@@ -6,6 +6,7 @@ import { Users, FileText, BarChart2, Menu } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import MainAchievements from '@/components/MainAchievments';
 import Footer from '@/components/Footer';
+import Aboutus from '@/components/Aboutus';
 
 
 
@@ -36,6 +37,7 @@ const BookerAccountingWebsite = () => {
       <Navbar scrolled={scrolled} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <HeroSection />
       <MainAchievements/>
+      <Aboutus/>
       <Footer/>
 
 

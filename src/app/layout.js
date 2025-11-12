@@ -1,7 +1,6 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import useLenis from "@/lib/lenis";
 import LenisWrapper from "@/components/LenisWrapper";
 
 const geistSans = Geist({

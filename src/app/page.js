@@ -1,4 +1,5 @@
- 'use client'
+// components/PerformanceReport.jsx
+'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
@@ -220,7 +221,7 @@ const PerformanceReport = () => {
                   </svg>
                   <div>
                     <p className="font-bold mb-1">Strong Revenue Growth</p>
-                    <p className="text-teal-100 text-sm">Sales increased **78.48%** from August to October</p>
+                    <p className="text-teal-100 text-sm">Sales increased 78.48% from August to October</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -229,7 +230,7 @@ const PerformanceReport = () => {
                   </svg>
                   <div>
                     <p className="font-bold mb-1">Improved Profitability</p>
-                    <p className="text-teal-100 text-sm">Reached profitability in October with **{formatAED(5915)}** net profit</p>
+                    <p className="text-teal-100 text-sm">Reached profitability in October with {formatAED(5915)} net profit</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -238,7 +239,7 @@ const PerformanceReport = () => {
                   </svg>
                   <div>
                     <p className="font-bold mb-1">Cost Control</p>
-                    <p className="text-teal-100 text-sm">Indirect expenses reduced by **25.4%** August to October</p>
+                    <p className="text-teal-100 text-sm">Indirect expenses reduced by 25.4% August to October</p>
                   </div>
                 </div>
               </div>
@@ -272,10 +273,10 @@ const PerformanceReport = () => {
             <div className="bg-orange-50 border-2 border-orange-200 p-6 rounded-lg">
               <h3 className="font-bold text-gray-900 mb-3">Capital Structure</h3>
               <p className="text-gray-700 text-sm">
-                **{formatAED(1046599)}** is permanent equity investment providing **100% ownership** and locked into the business
+                {formatAED(1046599)} is permanent equity investment providing 100% ownership and locked into the business
               </p>
               <p className="text-gray-700 text-sm mt-2">
-                **{formatAED(157478)}** is temporary working capital infused to support operations and to be repaid to partners from profits
+                {formatAED(157478)} is temporary working capital infused to support operations and to be repaid to partners from profits
               </p>
             </div>
 
@@ -360,13 +361,13 @@ const PerformanceReport = () => {
             <div className="bg-gradient-to-r from-teal-50 to-teal-100 border-2 border-teal-200 p-8 rounded-lg">
               <h3 className="font-bold text-gray-900 mb-4">Capital Structure Summary</h3>
               <div className="space-y-3 text-gray-700 text-sm">
-                <p>• **Equity Investment (Permanent):** {formatAED(1046599)} representing 100% ownership stake locked into the business assets and operations</p>
-                <p>• **Working Capital (Temporary):** {formatAED(157478)} infused to support operations over 3 months - will be progressively repaid to partners from profits</p>
-                <p>• **Ownership Based On:** Equity investment only - working capital contribution does not affect ownership percentages</p>
-                <p>• **Strategic Deployment:** Working capital infusions increased monthly to support 78.48% revenue growth (Aug: 45.2K, Sep: 58.3K, Oct: 53.9K)</p>
-                <p>• **Path to Repayment:** October profitability ({formatAED(5915)}) signals ability to begin working capital repayment</p>
+                <p>• Equity Investment (Permanent): {formatAED(1046599)} representing 100% ownership stake locked into the business assets and operations</p>
+                <p>• Working Capital (Temporary): {formatAED(157478)} infused to support operations over 3 months - will be progressively repaid to partners from profits</p>
+                <p>• Ownership Based On: Equity investment only - working capital contribution does not affect ownership percentages</p>
+                <p>• Strategic Deployment: Working capital infusions increased monthly to support 78.48% revenue growth (Aug: 45.2K, Sep: 58.3K, Oct: 53.9K)</p>
+                <p>• Path to Repayment: October profitability ({formatAED(5915)}) signals ability to begin working capital repayment</p>
                 <p className="pt-3 border-t border-teal-300">
-                  **Repayment Strategy:** Starting Q1 2026, working capital will be returned quarterly based on sustained profitability. Each partner receives repayment proportional to their WC contribution.
+                  Repayment Strategy: Starting Q1 2026, working capital will be returned quarterly based on sustained profitability. Each partner receives repayment proportional to their WC contribution.
                 </p>
               </div>
             </div>
@@ -536,7 +537,7 @@ const PerformanceReport = () => {
                 </div>
               </div>
               <p className="text-center text-sm text-gray-600 mt-6 pt-6 border-t">
-                Spend reduced **27.9%** while sales increased **78.48%**
+                Spend reduced 27.9% while sales increased 78.48%
               </p>
             </div>
           </div>
@@ -626,11 +627,11 @@ const PerformanceReport = () => {
                 Profitability Trajectory
               </h3>
               <div className="space-y-3 text-gray-700">
-                <p>• **August:** Net loss of {formatAED(76922)} (63.64% loss ratio) - startup phase</p>
-                <p>• **September:** Loss narrowed to {formatAED(31630)} (20.05% loss ratio) - 58.8% improvement</p>
-                <p>• **October:** Achieved profitability at {formatAED(5915)} (2.74% profit margin) - breakeven reached</p>
+                <p>• August: Net loss of {formatAED(76922)} (63.64% loss ratio) - startup phase</p>
+                <p>• September: Loss narrowed to {formatAED(31630)} (20.05% loss ratio) - 58.8% improvement</p>
+                <p>• October: Achieved profitability at {formatAED(5915)} (2.74% profit margin) - breakeven reached</p>
                 <p className="pt-3 border-t border-teal-300">
-                  **Overall Trend:** Strong recovery trajectory shows effective cost management and revenue growth alignment
+                  Overall Trend: Strong recovery trajectory shows effective cost management and revenue growth alignment
                 </p>
               </div>
             </div>
@@ -687,11 +688,11 @@ const PerformanceReport = () => {
                   Capitalize on Growth Momentum
                 </h3>
                 <p className="text-gray-700 mb-3">
-                  With **78.48%** revenue growth and October reaching profitability, maintain current operational efficiency
+                  With 78.48% revenue growth and October reaching profitability, maintain current operational efficiency
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
                   <li>Continue current marketing strategy - delivering excellent ROI</li>
-                  <li>Allocate more budget to **Noon** platform (highest growth: 218.67%)</li>
+                  <li>Allocate more budget to Noon platform (highest growth: 218.67%)</li>
                   <li>Maintain counter sales focus while growing online channels</li>
                 </ul>
               </div>
@@ -704,12 +705,12 @@ const PerformanceReport = () => {
                   Sustain Cost Control Excellence
                 </h3>
                 <p className="text-gray-700 mb-3">
-                  Indirect expenses reduced by **25.4%** while maintaining service quality
+                  Indirect expenses reduced by 25.4% while maintaining service quality
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
                   <li>Document current cost-saving processes for consistency</li>
                   <li>Monitor ingredient costs - ensure quality is maintained</li>
-                  <li>Target **50%+** gross margin by optimizing procurement further</li>
+                  <li>Target 50%+ gross margin by optimizing procurement further</li>
                 </ul>
               </div>
 
@@ -722,10 +723,10 @@ const PerformanceReport = () => {
                 </h3>
                 <p className="text-gray-700 mb-3">Based on current trajectory and market conditions</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
-                  <li>**Revenue Target:** {formatAED(250000)}+ monthly</li>
-                  <li>**Profit Target:** {formatAED(15000)}+ monthly net profit</li>
-                  <li>**Gross Margin:** Maintain 49%+ through supplier negotiation</li>
-                  <li>**Marketing ROI:** Reduce spend while maintaining sales growth</li>
+                  <li>Revenue Target: {formatAED(250000)}+ monthly</li>
+                  <li>Profit Target: {formatAED(15000)}+ monthly net profit</li>
+                  <li>Gross Margin: Maintain 49%+ through supplier negotiation</li>
+                  <li>Marketing ROI: Reduce spend while maintaining sales growth</li>
                 </ul>
               </div>
 

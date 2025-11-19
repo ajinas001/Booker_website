@@ -16,10 +16,10 @@ export default function ProfessionalReport() {
               <h1 className="text-3xl font-bold text-gray-900">Rukn Al Bait Al Arabi</h1>
               <p className="text-gray-600 mt-1">Performance Report • August - October 2025</p>
             </div>
-            <button className="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center gap-2">
+            {/* <button className="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center gap-2">
               <Download className="w-5 h-5" />
               Download PDF
-            </button>
+            </button> */}
           </div>
 
           <div className="flex gap-8">

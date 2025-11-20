@@ -20,6 +20,7 @@ const PerformanceReport = () => {
   const [activeSection, setActiveSection] = useState('overview');
   const chartRef = useRef(null);
 
+  // Currency: AED (United Arab Emirates Dirham)
   const formatAED = (amount) => {
     return `AED ${Math.abs(amount).toLocaleString('en-US')}`;
   };
@@ -37,7 +38,7 @@ const PerformanceReport = () => {
         fill: true,
       },
       {
-        label: 'Talabat Sales',
+        label: 'Deliveroo Sales', // Changed 'Talabat Sales'
         data: [6809, 17966, 17157],
         borderColor: 'rgb(251, 146, 60)',
         backgroundColor: 'rgba(251, 146, 60, 0.1)',
@@ -46,7 +47,7 @@ const PerformanceReport = () => {
         fill: true,
       },
       {
-        label: 'Noon Sales',
+        label: 'Zomato Sales', // Changed 'Noon Sales'
         data: [643, 912, 2051],
         borderColor: 'rgb(168, 85, 247)',
         backgroundColor: 'rgba(168, 85, 247, 0.1)',
@@ -292,27 +293,27 @@ const PerformanceReport = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200">
-                    <td className="py-3 px-3 font-semibold text-gray-900">Partner A (Riyas)</td>
+                    <td className="py-3 px-3 font-semibold text-gray-900">Partner A (Tariq)</td>
                     <td className="py-3 px-3 text-right text-gray-700">{formatAED(451613)}</td>
                     <td className="py-3 px-3 text-center font-bold text-teal-600">43.15%</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <td className="py-3 px-3 font-semibold text-gray-900">Partner B (Pranav)</td>
+                    <td className="py-3 px-3 font-semibold text-gray-900">Partner B (Salim)</td>
                     <td className="py-3 px-3 text-right text-gray-700">{formatAED(163920)}</td>
                     <td className="py-3 px-3 text-center font-bold text-teal-600">15.66%</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <td className="py-3 px-3 font-semibold text-gray-900">Partner C (Jamsheer)</td>
+                    <td className="py-3 px-3 font-semibold text-gray-900">Partner C (Omar)</td>
                     <td className="py-3 px-3 text-right text-gray-700">{formatAED(220439)}</td>
                     <td className="py-3 px-3 text-center font-bold text-teal-600">21.06%</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <td className="py-3 px-3 font-semibold text-gray-900">Partner D (Muneeb)</td>
+                    <td className="py-3 px-3 font-semibold text-gray-900">Partner D (Fahad)</td>
                     <td className="py-3 px-3 text-right text-gray-700">{formatAED(141116)}</td>
                     <td className="py-3 px-3 text-center font-bold text-teal-600">13.48%</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <td className="py-3 px-3 font-semibold text-gray-900">Partner E (Shafeeq)</td>
+                    <td className="py-3 px-3 font-semibold text-gray-900">Partner E (Yousuf)</td>
                     <td className="py-3 px-3 text-right text-gray-700">{formatAED(49511)}</td>
                     <td className="py-3 px-3 text-center font-bold text-teal-600">4.73%</td>
                   </tr>
@@ -335,19 +336,19 @@ const PerformanceReport = () => {
                 <h3 className="font-bold text-gray-900 mb-6">Working Capital by Partner</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between p-2 bg-purple-50 rounded">
-                    <span className="text-gray-700">Riyas</span>
+                    <span className="text-gray-700">Tariq</span>
                     <span className="font-bold">{formatAED(65896)}</span>
                   </div>
                   <div className="flex justify-between p-2 bg-purple-50 rounded">
-                    <span className="text-gray-700">Pranav</span>
+                    <span className="text-gray-700">Salim</span>
                     <span className="font-bold">{formatAED(43640)}</span>
                   </div>
                   <div className="flex justify-between p-2 bg-purple-50 rounded">
-                    <span className="text-gray-700">Jamsheer</span>
+                    <span className="text-gray-700">Omar</span>
                     <span className="font-bold">{formatAED(42091)}</span>
                   </div>
                   <div className="flex justify-between p-2 bg-purple-50 rounded">
-                    <span className="text-gray-700">Muneeb</span>
+                    <span className="text-gray-700">Fahad</span>
                     <span className="font-bold">{formatAED(5851)}</span>
                   </div>
                   <div className="flex justify-between p-2 bg-purple-100 rounded border border-purple-300 mt-2 font-bold">
@@ -409,14 +410,14 @@ const PerformanceReport = () => {
                     <td className="py-4 px-4 text-center font-bold text-green-600">+73.08%</td>
                   </tr>
                   <tr className="border-b border-gray-200 hover:bg-gray-50">
-                    <td className="py-4 px-4 font-semibold text-gray-900">Talabat Sales</td>
+                    <td className="py-4 px-4 font-semibold text-gray-900">Deliveroo Sales</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(6809)}</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(17966)}</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(17157)}</td>
                     <td className="py-4 px-4 text-center font-bold text-green-600">+151.83%</td>
                   </tr>
                   <tr className="bg-teal-50 hover:bg-teal-100">
-                    <td className="py-4 px-4 font-semibold text-gray-900">Noon Sales</td>
+                    <td className="py-4 px-4 font-semibold text-gray-900">Zomato Sales</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(643)}</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(912)}</td>
                     <td className="py-4 px-4 text-right text-gray-700">{formatAED(2051)}</td>
@@ -447,7 +448,7 @@ const PerformanceReport = () => {
               </div>
 
               <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-3">Talabat (7.95%)</h4>
+                <h4 className="font-bold text-gray-900 mb-3">Deliveroo (7.95%)</h4>
                 <p className="text-gray-700 text-sm mb-3">Online platform growth:</p>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Aug → Sep: +163.86%</li>
@@ -457,7 +458,7 @@ const PerformanceReport = () => {
               </div>
 
               <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
-                <h4 className="font-bold text-gray-900 mb-3">Noon (0.95%)</h4>
+                <h4 className="font-bold text-gray-900 mb-3">Zomato (0.95%)</h4>
                 <p className="text-gray-700 text-sm mb-3">Emerging channel:</p>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Aug → Sep: +41.93%</li>
@@ -692,7 +693,7 @@ const PerformanceReport = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
                   <li>Continue current marketing strategy - delivering excellent ROI</li>
-                  <li>Allocate more budget to Noon platform (highest growth: 218.67%)</li>
+                  <li>Allocate more budget to Zomato platform (highest growth: 218.67%)</li>
                   <li>Maintain counter sales focus while growing online channels</li>
                 </ul>
               </div>
@@ -739,7 +740,7 @@ const PerformanceReport = () => {
                 </h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
                   <li>Ingredient costs increased 80.7% with revenue up 78.48%</li>
-                  <li>Verify Talabat commissions aren't eroding profitability</li>
+                  <li>Verify Deliveroo commissions aren't eroding profitability</li>
                   <li>Monitor cash flow to support growth investments</li>
                 </ul>
               </div>
@@ -759,7 +760,7 @@ const PerformanceReport = () => {
         <div className="pt-8 pb-6 border-b-2 border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">Rukn Al Bait Al Arabi</h1>
+              <h1 className="text-3xl font-bold text-gray-900">Al Wasl Trading Co. LLC</h1> {/* Random company name */}
               <p className="text-gray-600 mt-1">Performance Report • August - October 2025</p>
             </div>
             <button 
@@ -780,7 +781,7 @@ const PerformanceReport = () => {
             </div>
             <div>
               <p className="text-sm text-gray-600 font-semibold">PREPARED BY</p>
-              <p className="text-lg text-gray-900 font-bold">Booker Accounting & Consulting</p>
+              <p className="text-lg text-gray-900 font-bold">Booker Accounting & Consulting</p> {/* Kept original consulting company name */}
             </div>
           </div>
         </div>
